@@ -33,6 +33,22 @@ app.get('/project/:id', (req, res) => {
   }
 });
 
+// 404 handler for undefined routes
+app.use((req, res, next) => {
+  const err = new Error('Page not found');
+  err.status = 404;
+  console.log(`404 Error: ${err.message}, Status: ${err.status}`);
+  next(err);
+});
+
+// Global error handler
+app.use((err, req, res, next) => {
+  err.status = err.status || 500;
+  err.message = err.message || 'Server error';
+  console.log(`Error: ${err.message}, Status: ${err.status}`);
+  res.status(err.status).render('error', { err });
+});
+
 // Start server
 const PORT = 3000;
 app.listen(PORT, () => {

@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= err.status
+  h2 Oops! Something went wrong.
+  p= err.message
+  a(href='/') Back to Home
