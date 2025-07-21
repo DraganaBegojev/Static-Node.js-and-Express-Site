@@ -58,6 +58,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding-inline-start: 20px;
+}
+
 .wrapper {
   width: 100%;
   min-width: 320px;
@@ -292,21 +296,11 @@ nav a span {
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
 
-.project-img-box.box {
-    padding-top: 0;
-}
-
 .skills-contact-box ul {
       margin-top: 0;
       margin-bottom: 20px;
 }
 
-.project-tech-links-box ul {
-  padding-inline-start: 20px;
-}
-.project-tech-links-box.box {
-    padding-bottom: 0;
-}
 .social-links {
     list-style: none;
     padding: 0;
@@ -363,6 +357,12 @@ nav a span {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
+  .project-img-box.box {
+    padding-top: 0;
+}
+  .project-tech-links-box.box {
+    padding-bottom: 0;
+}
 }
 
 
@@ -386,4 +386,5 @@ nav a span {
   .inner-wrapper {
     max-width: 1200px;
   }
+
 }
