@@ -271,9 +271,13 @@ nav a span {
   font-size: 125%;
 }
 
+.about-bio {
+  padding-top: 25px;
+}
+
 .about-bio p {
   font-size: 15px;
-  padding-top: 40px;
+  padding-top: 15px;
 }
 
 .skills-contact-box ul {
@@ -286,6 +290,16 @@ nav a span {
   margin-bottom: 15px;
   border: 4px solid #fff;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+}
+
+.skills-contact-box ul {
+      margin-top: 0;
+      margin-bottom: 20px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
 }
 
 .btn-link {
