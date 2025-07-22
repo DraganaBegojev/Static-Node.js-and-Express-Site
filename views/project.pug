@@ -18,9 +18,9 @@ block content
         ul
           each tech in project.technologies
             li #{tech}
-
-        a.btn-link(href=project.live_link target="_blank" rel="noopener noreferrer") Live Demo
-        a.btn-link(href=project.github_link target="_blank" rel="noopener noreferrer") GitHub Repo
+        ul.project-links
+          a.btn-link(href=project.live_link target="_blank" rel="noopener noreferrer") Live Demo
+          a.btn-link(href=project.github_link target="_blank" rel="noopener noreferrer") GitHub Repo
 
     .project-img-box.box
       each imgURL in project.image_urls.slice(1)
