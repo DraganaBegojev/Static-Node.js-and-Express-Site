@@ -22,12 +22,24 @@ To improve the visual clarity and give the site a modern, minimalist look, I cus
     To add a subtle depth effect and improve the visual appeal of the project thumbnails, I updated the box-shadow property on the .cell img elements.
 
     CSS Update:
-    <pre> ```css .cell img { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); } ``` </pre>
+    <pre> ```CSS 
+    .cell img { 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    } 
+    ``` </pre>
 
 * Project thumbnails hover effect
 
     Implemented a smooth hover effect to slightly enlarge project thumbnails and enhance shadow for a "pop-out" feel:
-    <pre> ```css .cell img { transition: transform 0.3s ease, box-shadow 0.3s ease; } .cell img:hover { transform: scale(1.03); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); } ``` </pre>
+    <pre> ```CSS 
+    .cell img { 
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        } 
+    .cell img:hover { 
+        transform: scale(1.03); 
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); 
+        } 
+        ``` </pre>
 
 * Buttons
 
@@ -36,12 +48,16 @@ To improve the visual clarity and give the site a modern, minimalist look, I cus
     - Smooth animations using transition: all 0.2s ease;
     - Initial box shadow for elevation: box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     - On hover:
-     <pre> ```css background-color: rgb(66, 119, 77); transform: translateY(2px); box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15); ``` </pre>
+     <pre> ```CSS 
+     background-color: rgb(66, 119, 77); 
+     transform: translateY(2px); 
+     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15); 
+     ``` </pre>
 
 * Navigation Styling
 
     Added custom hover effects for the navigation and sidebar links to improve interactivity and visual feedback:
-    <pre> ```css 
+    <pre> ```CSS 
     nav a:hover { 
         color: #000; 
         border-bottom: 2px solid #000; 
