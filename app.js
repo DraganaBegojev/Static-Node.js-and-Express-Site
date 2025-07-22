@@ -24,6 +24,7 @@ app.use((req, res, next) => {
 
 // Global error handler
 app.use((err, req, res, next) => {
+  console.log(`[${err.status || 500}] ${err.message} - ${req.originalUrl}`);
   res.status(err.status || 500);
   if (err.status === 404) {
     res.render('page-not-found', { error: err });
