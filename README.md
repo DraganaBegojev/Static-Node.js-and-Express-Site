@@ -52,12 +52,4 @@ To improve the visual clarity and give the site a modern, minimalist look, I cus
 * Navigation Styling
 
     Added custom hover effects for the navigation and sidebar links to improve interactivity and visual feedback:
-        nav a:hover {
-        color: #000;
-        border-bottom: 2px solid #000;
-        }
-
-        .sidebar a:hover {
-        color: #fefefe;
-        border-bottom: 2px solid #fefefe;
-        }
+    <pre> ```css nav a:hover {color: #000; border-bottom: 2px solid #000;} .sidebar a:hover { color: #fefefe border-bottom: 2px solid #fefefe;}``` </pre>
