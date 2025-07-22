@@ -322,6 +322,15 @@ nav a span {
   padding: 0.85em 1em;
   background-color: #333;
   border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-link:hover {
+  background-color: rgb(66, 119, 77);
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.15);
 }
 
   .project-tech-links-box ul {
