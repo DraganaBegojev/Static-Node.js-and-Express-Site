@@ -16,11 +16,24 @@ To improve the visual clarity and give the site a modern, minimalist look, I cus
 
 
 # 🎨 Visual Enhancements
-    To add a subtle depth effect and improve the visual appeal of the project images, I updated the box-shadow property on the .cell img elements.
+
+* Project box shadow
+
+    To add a subtle depth effect and improve the visual appeal of the project thumbnails, I updated the box-shadow property on the .cell img elements.
 
     CSS Update:
     .cell img {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    
+* Project thumbnails hover effect
+
+    Implemented a smooth hover effect to slightly enlarge project thumbnails and enhance shadow for a "pop-out" feel:
+    .cell img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cell img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
