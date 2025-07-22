@@ -33,20 +33,21 @@ app.get('/project/:id', (req, res) => {
   }
 });
 
-// 404 handler for undefined routes
+// 404 handler
 app.use((req, res, next) => {
-  const err = new Error('Page not found');
+  const err = new Error('Sorry, page not found.');
   err.status = 404;
-  console.log(`404 Error: ${err.message}, Status: ${err.status}`);
   next(err);
 });
 
 // Global error handler
 app.use((err, req, res, next) => {
-  err.status = err.status || 500;
-  err.message = err.message || 'Server error';
-  console.log(`Error: ${err.message}, Status: ${err.status}`);
-  res.status(err.status).render('error', { err });
+  res.status(err.status || 500);
+  if (err.status === 404) {
+    res.render('page-not-found', { error: err });
+  } else {
+    res.render('error', { error: err });
+  }
 });
 
 // Start server

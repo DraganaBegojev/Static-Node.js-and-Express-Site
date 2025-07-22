@@ -1,7 +1,8 @@
 extends layout
 
 block content
-  h1= err.status
-  h2 Oops! Something went wrong.
-  p= err.message
-  a(href='/') Back to Home
+  h2 Error #{error.status || 500}
+  p #{error.message}
+  if error.stack
+    pre #{error.stack}
+  a(href="/") Return to Home
