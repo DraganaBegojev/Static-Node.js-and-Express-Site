@@ -37,3 +37,27 @@ To improve the visual clarity and give the site a modern, minimalist look, I cus
     transform: scale(1.03);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     }
+
+* Buttons
+
+    Enhanced .btn-link buttons with a modern and tactile feel:
+    - Rounded corners using border-radius: 4px;
+    - Smooth animations using transition: all 0.2s ease;
+    - Initial box shadow for elevation: box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    - On hover:
+        background-color: rgb(66, 119, 77);
+        transform: translateY(2px);
+        box-shadow: 0 2px 3px rgba(0,0,0,0.15);
+
+* Navigation Styling
+
+    Added custom hover effects for the navigation and sidebar links to improve interactivity and visual feedback:
+        nav a:hover {
+        color: #000;
+        border-bottom: 2px solid #000;
+        }
+
+        .sidebar a:hover {
+        color: #fefefe;
+        border-bottom: 2px solid #fefefe;
+        }

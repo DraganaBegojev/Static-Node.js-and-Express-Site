@@ -134,6 +134,11 @@ nav a span {
   font-size: 1.25rem;
 }
 
+nav a:hover {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
 .sidebar {
   position: absolute;
   top: 0;
@@ -186,6 +191,11 @@ nav a span {
   text-transform: uppercase;
   color: #555;
   font-family: 'Fira Code', monospace;
+}
+
+.sidebar a:hover {
+  color: #fefefe;
+  border-bottom: 2px solid #fefefe;
 }
 
 .header {
